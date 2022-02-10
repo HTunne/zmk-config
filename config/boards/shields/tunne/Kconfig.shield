@@ -1,0 +1,4 @@
+config SHIELD_TUNNE_LEFT
+    def_bool $(shields_list_contains,tunne_left)
+config SHIELD_TUNNE_RIGHT
+    def_bool $(shields_list_contains,tunne_right)
