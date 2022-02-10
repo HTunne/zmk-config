@@ -1,4 +1,4 @@
-#include "tunne.dsti"
+#include "tunne.dtsi"
 
 &default_transform {
   col-offset = <18>;
