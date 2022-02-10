@@ -19,7 +19,7 @@ RC(0,10) RC(0,11) RC(0,12) RC(0,13) RC(0,14)                   RC(0,32) RC(0,31)
     };
 
     kscan0: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
+        compatible = "zmk,kscan-gpio-direct";
         label = "KSCAN";
         input-gpios
             = <&pro_micro 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // Row A from the schematic file
