@@ -37,7 +37,7 @@
     arw_layer {
       bindings = <
         &kp TAB   &kp INS   &kp LBRC &kp RBRC &kp LS(NON_US_BSLH) &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp PSCRN
-        &kp LCTRL &kp DEL   &kp LBKT &kp RBPK &kp NON_US_HASH     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp SQT
+        &kp LCTRL &kp DEL   &kp LBKT &kp RBKT &kp NON_US_HASH     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp SQT
         &kp LSHFT &kp GRAVE &kp LPAR &kp RPAR &kp PIPE2           &kp MINUS &kp UNDER &kp EQUAL &kp PLUS  &kp NON_US_HASH
                             &trans   &trans   &trans              &trans    &trans    &trans
       >;
