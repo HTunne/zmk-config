@@ -46,7 +46,7 @@
     ctl_layer {
       bindings = <
         &kp F11   &kp F12 &kp K_MUTE &kp K_PP   &kp K_VOL_UP &kp C_BRI_UP &none        &none        &none        &bt BT_CLR
-        &kp LCTRL &none   &kp K_PREV &kp K_NEXT &kp K_VOL_DN &kp C_BRI_DN &none        &none        &none        &none
+        &kp LCTRL &none   &kp K_PREV &kp K_NEXT &kp K_VOL_DN &kp C_BRI_DN &out OUT_BLE &out OUT_USB &none        &none
         &kp LSHFT &none   &kp LPAR   &kp RPAR   &kp PIPE2    &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
                           &trans     &trans     &trans       &trans       &trans       &trans
       >;
