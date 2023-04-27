@@ -49,37 +49,37 @@ ZMK_BEHAVIOR(hmr, hold_tap,
     compatible = "zmk,keymap";
     default_layer {
       bindings = <
-        &kp Q       &kp W       &kp E        &kp R         &kp T     &kp Y       &kp U           &kp I        &kp O       &kp P
-        &hml LGUI A &hml LALT S &hml LCTRL D &hml LSHFT F  &kp G     &kp H       &hmr RSHFT J    &hmr LCTRL K &hmr LALT L &hmr LGUI SEMI
-        &kp Z       &kp X       &kp C        &kp V         &kp B     &kp N       &kp M           &kp COMMA    &kp DOT     &kp FSLH
-                                &trans       &mt LGUI BSPC &lt 2 ESC &lt 1 ENTER &mt LSFT SPACE  &trans
+        &kp Q       &kp W       &kp E        &kp R         &kp T     &kp Y       &kp U          &kp I            &kp O         &kp P
+        &kp A       &kp S       &kp D        &kp F         &kp       &kp H       &kp J          &kp K            &kp L         &kp SEMI
+        &hml LGUI Z &hml LALT X &hml LCTRL C &hml LSHFT V  &kp B     &kp N       &hmr RSHFT M   &hmr LCTRL COMMA &hmr LALT DOT &hmr LGUI FSLH
+                                &LALT TAB    &mt LGUI BSPC &lt 2 ESC &lt 1 ENTER &mt LSFT SPACE &trans
       >;
     };
 
     num_layer {
       bindings = <
-        &kp F1       &kp F2       &kp F3        &kp F4        &kp F5    &kp F6    &kp F7        &kp F8        &kp F9       &kp F10
-        &hml LGUI N1 &hml LALT N2 &hml LCTRL N3 &hml LSHFT N4 &kp N5    &kp N6    &hmr RSHFT N7 &hmr LCTRL N8 &hmr LALT N9 &hmr LGUI N0
-        &kp EXCL     &kp AT       &kp HASH      &kp DLLR      &kp PRCNT &kp CARET &kp AMPS      &kp STAR      &kp LPAR     &kp RPAR
-                                  &trans        &trans        &trans    &trans    &trans        &trans
+        &kp F1         &kp F2       &kp F3          &kp F4          &kp F5    &kp F6    &kp F7          &kp F8          &kp F9         &kp F10
+        &kp N1         &kp N2       &kp N3          &kp N4          &kp N5    &kp N6    &kp N7          &kp N8          &kp N9         &kp N0
+        &hml LGUI EXCL &hml LALT AT &hml LCTRL HASH &hml LSHFT DLLR &kp PRCNT &kp CARET &hmr RSHFT AMPS &hmr LCTRL STAR &hmr LALT LPAR &hmr LGUI RPAR
+                                    &trans          &trans          &trans    &trans    &trans          &trans
       >;
     };
 
     arw_layer {
       bindings = <
-        &kp TAB         &kp INS       &kp LBRC        &kp RBRC        &kp LS(NON_US_HASH) &kp HOME  &kp PG_DN       &kp PG_UP     &kp END         &kp PSCRN
-        &kp LGUI        &hml LALT DEL &hml LCTRL LBKT &hml LSHFT RBKT &kp NON_US_HASH     &kp LEFT  &hmr RSHFT DOWN &hmr LCTRL UP &hmr LALT RIGHT &hmr LGUI SQT
-        &kp NON_US_BSLH &kp GRAVE     &kp LPAR        &kp RPAR        &kp PIPE2           &kp MINUS &kp UNDER       &kp EQUAL     &kp PLUS        &kp NON_US_HASH
-                                      &trans          &trans          &trans              &trans    &trans          &trans
+        &kp TAB         &kp INS         &kp LBRC        &kp RBRC        &kp LS(NON_US_HASH) &kp HOME  &kp PG_DN        &kp PG_UP        &kp END         &kp PSCRN
+        &kp NON_US_BSLH &kp DEL         &kp LBKT        &kp RBKT        &kp NON_US_HASH     &kp LEFT  &kp DOWN         &kp UP           &kp RIGHT       &kp SQT
+        &kp LGUI        &hml LALT GRAVE &hml LCTRL LPAR &hml LSHFT RPAR &kp PIPE2           &kp MINUS &hmr RSHFT UNDER &hmr LCTRL EQUAL &hmr LALT PLUS  &hmr LGUI NON_US_HASH
+                                        &trans          &trans          &trans              &trans    &trans           &trans
       >;
     };
 
     ctl_layer {
       bindings = <
-        &kp F11      &kp F12          &kp K_MUTE        &kp K_PP            &kp K_VOL_UP &kp C_BRI_UP &none              &none              &none        &bt BT_CLR
-        &kp LGUI     &kp LALT         &hml LCTRL K_PREV &hml LSHFT K_NEXT   &kp K_VOL_DN &kp C_BRI_DN &out OUT_BLE       &out OUT_USB       &none        &none
-        &kp LSHFT    &none            &kp LPAR          &kp RPAR            &kp PIPE2    &bt BT_SEL 1 &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4 &bt BT_SEL 5
-                                      &trans            &trans              &trans       &trans       &trans             &trans
+        &kp F11   &kp F12  &kp K_MUTE &kp K_PP   &kp K_VOL_UP &kp C_BRI_UP &none        &none        &none        &bt BT_CLR
+        &kp LSHFT &kp LALT &kp K_PREV &kp K_NEXT &kp K_VOL_DN &kp C_BRI_DN &out OUT_BLE &out OUT_USB &none        &none
+        &kp LGUI  &kp LALT &kp LCTRL  &kp LSHFT  &none        &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
+                           &trans     &trans     &trans       &trans       &trans       &trans
       >;
     };
   };
